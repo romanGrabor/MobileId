@@ -1,17 +1,28 @@
 POST https://192.168.125.56:44313/oidc/si-authorize
+
 Content-Type: application/json
 
 {
+
   "client_id": "testClient",
+  
   "response_type": "mc_si_async_code",
+  
   "scope": "openid mc_authn",
+  
   "request": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InJzYTEifX0.eyJpc3MiOiJ0ZXN0Q2xpZW50IiwicmVzcG9uc2VfdHlwZSI6Im1jX3NpX2FzeW5jX2NvZGUiLCJjbGllbnRfaWQiOiJ0ZXN0Q2xpZW50Iiwic2NvcGUiOiJvcGVuaWQgbWNfYXV0aG4iLCJ2ZXJzaW9uIjoibWNfc2lfcjJfdjEuMCIsIm5vbmNlIjoiY2JhYmYyYzItNDkzYS00NjNmLThiOGQtYWI3ZDMwNDM2ZjZkIiwibG9naW5faGludCI6IkVOQ1JfTVNJU0ROOlJsd2RHLi4uVmtJRTFFVGciLCJhY3JfdmFsdWVzIjoiMiIsImNvcnJlbGF0aW9uX2lkIjoiOGViMTRlMDYtNzY5ZS00YjIxLWJkYTAtYjgwZmRmZjc0YWUwIiwiY2xpZW50X25vdGlmaWNhdGlvbl90b2tlbiI6ImJlYjQ2MDYyLTU4Y2EtNDIyZS1iZjE0LTM4MDZjZTU5ZmVkYiIsImF1ZCI6Imh0dHBzOlwvXC9pZGd3Lm1vYmlsZWlkLm10cy5ydSIsIm5vdGlmaWNhdGlvbl91cmkiOiJodHRwczpcL1wvZ3JhYm92ZWMubG9jYWxcL25vdGlmaWNhdGlvbl91cmkifQ.cd_dVegCsfZs2b6A9mCrjM4QH2GPKS7ofDjLP0EVmmNkkJPrR9iX02WxQj7t0Iej_yyYv8B82eweg1xzQ7eRwWccC3LelAx8GItRNU6i3eoSFykO6ZDTvvFN-iZaUe3YzyNFssQOH3n-d_XI4ixyxWY2wfpN83O83l-0IQn46LBtULrzL3ewbD5oIvzjmcF5cQDyjmCWnspdtVYciLCzbxloMOKVzdRe-2DoRG_o4c_WXbf68R6dx6WY0UkqgBaTX8-KX5lxhjsHSFRCHagh6jLcidWkxWub6xVBKgmNls1TXQUM6Ludx3kYJU7lqIErqACL8QsfZRKmSENBVKwyJg"
+  
 }
 
 Response:
+
 {
+
   "error": "invalid_request",
+  
   "error_description": "required parameter \"client_id\" is missing or empty"
+  
 }
+
 
 Фиктивный private key тут - https://github.com/romanGrabor/MobileId/blob/2c352aa4ed466ddff5b1f4a959c01b596f4cd895/Config.php#L15
