@@ -1,4 +1,4 @@
-POST [https://192.168.125.56:44313/oidc/si-authorize](https://idgw.mobileid.mts.ru/oidc/si-authorize)
+POST https://idgw.mobileid.mts.ru/oidc/si-authorize
 
 Content-Type: application/json
 
